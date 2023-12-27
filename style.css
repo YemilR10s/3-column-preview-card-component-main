@@ -20,10 +20,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--Transparent-white-paragraphs);
+
 }
 .items-container{
     width: 1000px;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: nowrap;
     margin: 100px;
