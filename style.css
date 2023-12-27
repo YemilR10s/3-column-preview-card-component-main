@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    
+ --Bright-orange: hsl(31, 77%, 52%);
+ --Dark-cyan: hsl(184, 100%, 22%);
+ --Very-dark-cyan: hsl(179, 100%, 13%);
+ --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+ --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-container{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 100px;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    
+}
+.sedans{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    justify-content: space-around;
+    background-color: var(--Bright-orange);
+    border-radius: 20px 0 0 20px;
+    color: var(--Transparent-white-paragraphs);
+     
+    
+    
+}
+.suvs{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    justify-content: space-around;
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+     
+    
+}
+.luxury{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    justify-content: space-around;
+    border-radius: 0px 20px 20px 0px;
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+     
+
+    
+}
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid  var(--Very-light-gray-background-headings-buttons);
+    background: none;
+    color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+
+}
+h1{
+    text-transform: uppercase;
+    font-family:'Big Shoulders Display';
+    font-size: 2.5em;
+    color: var(--Very-light-gray-background-headings-buttons);
+
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width:900px){
+    main{
+        width: 100%;
+        height: 1500px;
+    }
+    .items-container{
+        width: 400px;
+        height: 1500px;
+        flex-wrap: wrap;
+    }
+    .sedans{
+        border-radius: 20px 20px 0 0;     
+             
+    }
+    .luxury{
+        border-radius: 0 0 20px 20px;     
+
+    }
+ }
